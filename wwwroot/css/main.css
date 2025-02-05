@@ -1,0 +1,11 @@
+html, body {
+    font-family: "Arial Narrow Bold", sans-serif
+}
+
+h1:focus {
+    outline: none;
+}
+
+#blazor-error-ui, .loading-progress {
+    display: none;
+}
