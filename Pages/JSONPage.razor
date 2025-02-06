@@ -7,12 +7,11 @@
 
 <h2>Goda äppelsorter</h2>
 
-<!-- Nullvärde-kontroll. -->
+<!-- Nullvärde-kontroll. Om listan innehåller objekt skrivs de ut i en ul-lista som li-element med nästlad lista. -->
 @if (apples == null)
 {
     <p>Laddar in äpplen...</p>
 }
-<!-- Om listan innehåller objekt skrivs de ut i en ul-lista som li-element med nästlad lista. -->
 else
 {
     <ul class="list">
