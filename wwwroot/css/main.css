@@ -46,13 +46,13 @@ nav li {
     padding: 0.25rem 0;
 }
 
-/* Nav-länkar. */
-nav a {
+/* Nav-länkar (samt länk i footer). */
+nav a, footer a {
     color: white;
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, footer a:hover {
     text-decoration: underline;
 }
 
@@ -63,7 +63,7 @@ nav a:hover {
     color: rgb(151, 207, 118);
 }
 
-/* Sid-rubrik. */
+/* Sid-rubriker. */
 h1:focus {
     outline: none;
 }
@@ -79,7 +79,7 @@ h3 {
 }
 
 /* Brödtext. */
-p:not(.form-container p) {
+p:not(.form-container p, footer p) {
     text-align: center;
     padding: 2rem;
 }
@@ -98,12 +98,11 @@ p:not(.form-container p) {
 /* Formulär på Konverterings-sidan. */
 .form-container {
     background-color: rgb(241, 182, 182);
-    padding: 2rem;
     width: 100%;
     max-width: 500px;
-    margin: 2rem auto;
-    text-align: left;
-    line-height: 2;
+    margin: 0 auto;
+    line-height: 2.5;
+    padding: 1rem;
 }
 
 .form-container p {
@@ -125,11 +124,12 @@ button {
     background-color: rgb(232, 88, 88);
     padding: 4px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* Lista med äpplen på JSON-sidan. */
 .list {
-    margin: 2rem auto 2rem auto;
+    margin: 0 auto 2rem auto;
     max-width: 275px;
     list-style-type: none;
     text-align: left;
@@ -162,7 +162,7 @@ footer {
     margin-top: auto;
     color: white;
     text-align: center;
-    font-weight: bold;
+    padding: 1rem;
 }
 
 /* Media-queries. */

@@ -1,7 +1,7 @@
 @page "/convert"
 @using System
 
-<PageTitle>Konvertering</PageTitle>
+<PageTitle>Äppelriket | Konvertering</PageTitle>
 
 <h1>Konvertering</h1>
 
@@ -18,9 +18,22 @@
     <p>Resultat: @meter meter är @convertedFeet fot</p>
 </div>
 
+<p>Konvertera kilometer till miles/hour.</p>
+
+<div class="form-container">
+    <form>
+        <label for="kilometer">Ange antal km/h:</label>
+        <input type="number" id="kilometer" @bind="kilometer">
+        <button type="button" @onclick="ConvertKmToMiles">Konvertera</button>
+    </form>
+
+    <p>Resultat: @kilometer km/h är @convertedMiles miles/hour</p>
+</div>
+
 
 @code {
-    // Variabler för meter och fot. 
+
+    // Variabler för meter och fot.
     private double meter;
     private double convertedFeet;
 
@@ -28,5 +41,15 @@
     private void ConvertMeterToFeet()
     {
         convertedFeet = Math.Round(meter * 3.28084, 2);
+    }
+
+    // Variabler för kilometer och miles.
+    private double kilometer;
+    private double convertedMiles;
+
+    // Metod som konverterar km/h till miles/hour genom en beräkning där 1 km/h = 0.621371 miles/hour.
+    private void ConvertKmToMiles()
+    {
+        convertedMiles = (int)Math.Round(kilometer * 0.621371);
     }
 }
