@@ -1,5 +1,55 @@
 @page "/json"
+@inject HttpClient Http
 
 <PageTitle>JSON</PageTitle>
 
 <h1>JSON</h1>
+
+<h2>Goda äppelsorter</h2>
+
+<!-- Nullvärde-kontroll. -->
+@if (apples == null)
+{
+    <p>Laddar in äpplen...</p>
+}
+<!-- Om listan innehåller objekt skrivs de ut i en ul-lista som li-element med nästlad lista. -->
+else
+{
+    <ul class="list">
+        @foreach (var apple in apples)
+        {
+            <li class="li">
+                <h3>@apple.Name</h3>
+                <ul class="nested-list">
+                    <li class="nested-li"><strong>Ursprung:</strong> @apple.Origin</li>
+                    <li class="nested-li"><strong>Smak:</strong> @apple.Taste</li>
+                    <li class="nested-li"><strong>Passar till:</strong> @apple.SuitableFor</li>
+                </ul>
+            </li>
+        }
+    </ul>
+}
+
+<!--    
+    Hämtar och visar en lista med äpplesorter från en JSON-fil.
+    Definierar en modell för äppelsorter och gör ett HTTP-anrop som laddar in data.  
+-->
+@code {
+    // Array med äppelsorter.
+    private Apple[]? apples;
+
+    // Http-anrop som hämtar in JSON-data från fil.
+    protected override async Task OnInitializedAsync()
+    {
+        apples = await Http.GetFromJsonAsync<Apple[]>("assets/Apples.json");
+    }
+
+    // Modell för äppelsorter.
+    public class Apple
+    {
+        public string? Name { get; set; }
+        public string? Origin { get; set; }
+        public string? Taste { get; set; }
+        public string? SuitableFor { get; set; }
+    }
+}

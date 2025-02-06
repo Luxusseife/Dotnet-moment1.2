@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Granny Smith",
+        "origin": "Australien",
+        "taste": "Syrlig",
+        "suitableFor": "Bakning"
+    },
+    {
+        "name": "Golden Delicious",
+        "origin": "USA",
+        "taste": "Söt",
+        "suitableFor": "Ätas färsk"
+    },
+    {
+        "name": "Fuji",
+        "origin": "Japan",
+        "taste": "Mycket söt",
+        "suitableFor": "Dessert"
+    },
+    {
+        "name": "Honeycrisp",
+        "origin": "USA",
+        "taste": "Söt och krispig",
+        "suitableFor": "Ätas färsk"
+    },
+    {
+        "name": "Braeburn",
+        "origin": "Nya Zeeland",
+        "taste": "Balanserad sötma och syra",
+        "suitableFor": "Matlagning"
+    },
+    {
+        "name": "Pink Lady",
+        "origin": "Australien",
+        "taste": "Söt och syrlig",
+        "suitableFor": "Snacks"
+    },
+    {
+        "name": "Jazz",
+        "origin": "Nya Zeeland",
+        "taste": "Krispig och söt",
+        "suitableFor": "Ätas färsk"
+    },
+    {
+        "name": "Aroma",
+        "origin": "Sverige",
+        "taste": "Söt och syrlig",
+        "suitableFor": "Bakning"
+    },
+    {
+        "name": "Red Delicious",
+        "origin": "USA",
+        "taste": "Mild och söt",
+        "suitableFor": "Ätas färsk"
+    },
+    {
+        "name": "Cox’s Orange Pippin",
+        "origin": "England",
+        "taste": "Aromatisk och komplex",
+        "suitableFor": "Efterrätter"
+    },
+    {
+        "name": "Ingrid Marie",
+        "origin": "Sverige",
+        "taste": "Frisk och syrlig",
+        "suitableFor": "Ätas färsk"
+    },
+    {
+        "name": "Ambrosia",
+        "origin": "Kanada",
+        "taste": "Söt och mild",
+        "suitableFor": "Ätas färsk"
+    }
+]
