@@ -1,0 +1,30 @@
+@namespace Moment1._2.Components
+
+<!-- Komponent som randomiserar och visar en random bild på äpplen vid varje sidladdning. -->
+@code {
+    // Variabel för äppelbildens sökväg.
+    private string? appleImg;
+
+    // Skapar en instans av Random-klass.
+    private readonly Random random = new();
+
+    // En lista med tillgängliga äppelbilder.
+    private string[] appleImages = new[] 
+    {
+        "assets/apples1.png",
+        "assets/apples2.png",
+        "assets/apples3.png",
+        "assets/apples4.png",
+        "assets/apples5.png",
+    };
+
+    // Metod som körs vid rendering av komponenten.
+    protected override void OnInitialized()
+    {
+        // Väljer en random bild från listan.
+        appleImg = appleImages[random.Next(appleImages.Length)];
+    }
+}
+
+<!-- Renderar den randomiserade bilden som en <img>-tagg. -->
+<img src="@appleImg" class="apple-img" alt="Äpplen">

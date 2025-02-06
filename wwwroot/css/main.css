@@ -84,6 +84,17 @@ p {
     padding: 2rem;
 }
 
+/* Äppelbild på start. */
+.apple-container {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.apple-img {
+    width: 100%;
+}
+
 /* Lista. */
 .list {
     margin: 2rem auto 2rem auto;
@@ -117,7 +128,6 @@ footer {
     background-color: rgb(75, 108, 75);
     height: 75px;
     margin-top: auto;
-    padding-top: 1rem;
     color: white;
     text-align: center;
     font-weight: bold;

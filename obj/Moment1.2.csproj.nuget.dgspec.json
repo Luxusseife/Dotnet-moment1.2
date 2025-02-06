@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\Moment1.2\\Moment1.2.csproj": {}
+    "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\moment1.2\\Moment1.2.csproj": {}
   },
   "projects": {
-    "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\Moment1.2\\Moment1.2.csproj": {
+    "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\moment1.2\\Moment1.2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\Moment1.2\\Moment1.2.csproj",
+        "projectUniqueName": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\moment1.2\\Moment1.2.csproj",
         "projectName": "Moment1.2",
-        "projectPath": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\Moment1.2\\Moment1.2.csproj",
+        "projectPath": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\moment1.2\\Moment1.2.csproj",
         "packagesPath": "C:\\Users\\Min Dator\\.nuget\\packages\\",
-        "outputPath": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\Moment1.2\\obj\\",
+        "outputPath": "C:\\Webbutveckling\\DT191G-Webbutveckling med .NET\\Moment1.2\\moment1.2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Min Dator\\AppData\\Roaming\\NuGet\\NuGet.Config",
